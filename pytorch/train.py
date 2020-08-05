@@ -20,7 +20,7 @@ parser = argparse.ArgumentParser(description='PyTorch Transformer Language Model
 parser.add_argument('--data', type=str, default='../data/wikitext-103',
                     help='location of the data corpus')
 parser.add_argument('--dataset', type=str, default='wt103',
-                    choices=['wt103', 'lm1b', 'enwik8', 'text8'],
+                    choices=['wt103', 'lm1b', 'enwik8', 'text8', 'wdtrain', 'wddev'],
                     help='dataset name')
 parser.add_argument('--n_layer', type=int, default=12,
                     help='number of total layers')
@@ -196,13 +196,16 @@ te_iter = corpus.get_iterator('test', eval_batch_size, args.eval_tgt_len,
 # adaptive softmax / embedding
 cutoffs, tie_projs = [], [False]
 if args.adaptive:
-    assert args.dataset in ['wt103', 'lm1b']
+    assert args.dataset in ['wt103', 'wdtrain', 'wddev']
     if args.dataset == 'wt103':
         cutoffs = [20000, 40000, 200000]
         tie_projs += [True] * len(cutoffs)
-    elif args.dataset == 'lm1b':
-        cutoffs = [60000, 100000, 640000]
+    elif args.dataset == 'wdtrain':
+        cutoffs = []
         tie_projs += [False] * len(cutoffs)
+    if args.dataset == 'wddev':
+        cutoffs = [20000, 40000, 200000]
+        tie_projs += [True] * len(cutoffs)
 
 ###############################################################################
 # Build the model
@@ -371,6 +374,20 @@ if args.restart:
             optimizer.load_state_dict(opt_state_dict)
     else:
         print('Optimizer was not saved. Start from scratch.')
+if args.restart:
+    global train_step
+    if os.path.exists(os.path.join(args.restart_dir, 'scheduler.pt')):
+        with open(os.path.join(args.restart_dir, 'scheduler.pt'), 'rb') as f:
+            sch_state_dict = torch.load(f)
+            scheduler.load_state_dict(sch_state_dict)
+    else:
+        print('Scheduler was not saved. Start from scratch.')
+
+    if os.path.exists(os.path.join(args.restart_dir, 'trainstep.pt')):
+        with open(os.path.join(args.restart_dir, 'trainstep.pt'), 'rb') as f:
+            train_step = torch.load(f)
+    else:
+        print('trainstep was not saved. Start from scratch.')
 
 logging('=' * 100)
 for k, v in args.__dict__.items():
@@ -418,7 +435,10 @@ def evaluate(eval_iter):
 
 def train():
     # Turn on training mode which enables dropout.
-    global train_step, train_loss, best_val_loss, eval_start_time, log_start_time
+    if args.restart:
+        global train_loss, best_val_loss, eval_start_time, log_start_time
+    else:
+        global  train_step,train_loss, best_val_loss, eval_start_time, log_start_time
     model.train()
     if args.batch_chunk > 1:
         mems = [tuple() for _ in range(args.batch_chunk)]
@@ -512,6 +532,10 @@ def train():
                         torch.save(model, f)
                     with open(os.path.join(args.work_dir, 'optimizer.pt'), 'wb') as f:
                         torch.save(optimizer.state_dict(), f)
+                    with open(os.path.join(args.work_dir, 'scheduler.pt'), 'wb') as f:
+                        torch.save(scheduler.state_dict(), f)
+                    with open(os.path.join(args.work_dir, 'trainstep.pt'), 'wb') as f:
+                        torch.save(train_step,f)  
                 best_val_loss = val_loss
 
             # dev-performance based learning rate annealing
@@ -526,7 +550,8 @@ def train():
             break
 
 # Loop over epochs.
-train_step = 0
+if not args.restart:
+    train_step = 0
 train_loss = 0
 best_val_loss = None
 
