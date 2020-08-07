@@ -1,1 +1,4 @@
 abhilash/
+__pycache__/
+data/
+*.pt

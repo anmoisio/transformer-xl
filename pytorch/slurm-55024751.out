@@ -1,0 +1,136 @@
+Run training...
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+/tmp/pip-req-build-p5q91txh/aten/src/ATen/native/cuda/LegacyDefinitions.cpp:14: UserWarning: masked_fill_ received a mask with dtype torch.uint8, this behavior is now deprecated,please use a mask with dtype torch.bool instead.
+Experiment dir : LM-TFM-wdtrain/20200806-152209
+Loading cached dataset...
+====================================================================================================
+    - data : /scratch/work/moisioa3/conv_lm/data/lm-train/web-dsp/
+    - dataset : wdtrain
+    - n_layer : 48
+    - n_head : 8
+    - d_head : 40
+    - d_embed : 256
+    - d_model : 256
+    - d_inner : 1024
+    - dropout : 0.05
+    - dropatt : 0.05
+    - init : normal
+    - emb_init : normal
+    - init_range : 0.1
+    - emb_init_range : 0.01
+    - init_std : 0.02
+    - proj_init_std : 0.01
+    - optim : adam
+    - lr : 0.00025
+    - mom : 0.0
+    - scheduler : cosine
+    - warmup_step : 0
+    - decay_rate : 0.5
+    - lr_min : 0.0
+    - clip : 0.25
+    - clip_nonemb : False
+    - max_step : 400000
+    - batch_size : 512
+    - batch_chunk : 1
+    - tgt_len : 32
+    - eval_tgt_len : 32
+    - ext_len : 0
+    - mem_len : 32
+    - not_tied : False
+    - seed : 1111
+    - cuda : True
+    - adaptive : False
+    - div_val : 1
+    - pre_lnorm : False
+    - varlen : False
+    - multi_gpu : False
+    - log_interval : 200
+    - eval_interval : 4000
+    - work_dir : LM-TFM-wdtrain/20200806-152209
+    - restart : False
+    - restart_dir : 
+    - debug : False
+    - same_length : False
+    - attn_type : 0
+    - clamp_len : -1
+    - eta_min : 0.0
+    - gpu0_bsz : -1
+    - max_eval_steps : -1
+    - sample_softmax : -1
+    - patience : 0
+    - finetune_v2 : False
+    - finetune_v3 : False
+    - fp16 : False
+    - static_loss_scale : 1
+    - dynamic_loss_scale : False
+    - tied : True
+    - n_token : 2427250
+    - n_all_param : 668741106
+    - n_nonemb_param : 44937216
+====================================================================================================
+#params = 668741106
+#non emb params = 44937216
+Traceback (most recent call last):
+  File "train.py", line 564, in <module>
+    train()
+  File "train.py", line 465, in train
+    ret = para_model(data, target, *mems)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/mem_transformer.py", line 754, in forward
+    loss = self.crit(pred_hid.view(-1, pred_hid.size(-1)), target.view(-1))
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "utils/proj_adaptive_softmax.py", line 85, in forward
+    self.out_layers[0].bias, self.out_projs[0])
+  File "utils/proj_adaptive_softmax.py", line 61, in _compute_logit
+    logit = F.linear(hidden, weight, bias=bias)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/functional.py", line 1369, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: CUDA out of memory. Tried to allocate 148.15 GiB (GPU 0; 31.75 GiB total capacity; 24.86 GiB already allocated; 6.03 GiB free; 100.80 MiB cached)

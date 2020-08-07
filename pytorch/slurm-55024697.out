@@ -1,0 +1,13 @@
+Run training...
+Experiment dir : LM-TFM-wdtrain/20200806-145234
+Loading cached dataset...
+Traceback (most recent call last):
+  File "train.py", line 184, in <module>
+    corpus = get_lm_corpus(args.data, args.dataset)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/data_utils.py", line 345, in get_lm_corpus
+    corpus = torch.load(fn)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py", line 386, in load
+    return _load(f, map_location, pickle_module, **pickle_load_args)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py", line 563, in _load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+EOFError: Ran out of input

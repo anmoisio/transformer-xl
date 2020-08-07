@@ -1,0 +1,28 @@
+Run training...
+Experiment dir : LM-TFM-wdtrain/20200806-151402
+Producing dataset wdtrain...
+building vocab from /scratch/work/moisioa3/conv_lm/data/lm-train/web-dsp/word.vocab
+final vocab size 2427250
+Traceback (most recent call last):
+  File "train.py", line 302, in <module>
+    para_model = model.to(device)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 432, in to
+    return self._apply(convert)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 208, in _apply
+    module._apply(fn)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 208, in _apply
+    module._apply(fn)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 208, in _apply
+    module._apply(fn)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 230, in _apply
+    param_applied = fn(param)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 430, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/cuda/__init__.py", line 178, in _lazy_init
+    _check_driver()
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/cuda/__init__.py", line 99, in _check_driver
+    http://www.nvidia.com/Download/index.aspx""")
+AssertionError: 
+Found no NVIDIA driver on your system. Please check that you
+have an NVIDIA GPU and installed a driver from
+http://www.nvidia.com/Download/index.aspx

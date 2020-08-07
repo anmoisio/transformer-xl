@@ -26,8 +26,11 @@ class Vocab(object):
         else:
             symbols = line.split(self.delimiter)
 
-        if add_double_eos: # lm1b
-            return ['<S>'] + symbols + ['<S>']
+	    if add_double_eos:
+            if len(symbols) == 1 and symbols[0] == '<S>':
+                return ['<S>'] + symbols
+            else:
+                return ['<S>'] + symbols + ['<S>']
         elif add_eos:
             return symbols + ['<eos>']
         else:

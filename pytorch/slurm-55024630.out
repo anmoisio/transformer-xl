@@ -1,0 +1,16 @@
+Run training...
+Experiment dir : LM-TFM-wdtrain/20200806-144002
+Producing dataset wdtrain...
+building vocab from /scratch/work/moisioa3/conv_lm/data/lm-train/web-dsp/word.vocab
+Traceback (most recent call last):
+  File "train.py", line 184, in <module>
+    corpus = get_lm_corpus(args.data, args.dataset)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/data_utils.py", line 362, in get_lm_corpus
+    corpus = Corpus(datadir, dataset, **kwargs)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/data_utils.py", line 275, in __init__
+    self.vocab.build_vocab()
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/utils/vocabulary.py", line 77, in build_vocab
+    self._build_from_file(self.vocab_file)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/utils/vocabulary.py", line 72, in _build_from_file
+    self.unk_idx = self.sym2idx['<UNK>']
+KeyError: '<UNK>'
