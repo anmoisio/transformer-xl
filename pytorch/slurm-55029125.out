@@ -1,0 +1,16 @@
+
+Currently Loaded Modules:
+  1) anaconda3/2019.11-gpu
+
+ 
+
+Run training...
+Traceback (most recent call last):
+  File "train.py", line 14, in <module>
+    from data_utils import get_lm_corpus
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/data_utils.py", line 8, in <module>
+    from utils.vocabulary import Vocab
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/utils/vocabulary.py", line 29
+    if add_double_eos:
+                     ^
+TabError: inconsistent use of tabs and spaces in indentation

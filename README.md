@@ -1,3 +1,5 @@
+#### Modifications after forking mostly from [Abhilash Jain's experiments](https://github.com/aalto-speech/FinnishXL)
+
 # Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context
 
 This repository contains the code in both **PyTorch** and **TensorFlow** for our paper
