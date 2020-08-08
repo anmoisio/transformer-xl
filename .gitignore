@@ -1,4 +1,5 @@
 abhilash/
 __pycache__/
 data/
+pytorch/tmp/
 *.pt

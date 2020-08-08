@@ -1,0 +1,31 @@
+
+Currently Loaded Modules:
+  1) anaconda3/2019.11-gpu
+
+ 
+
+/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'mem_transformer.MemTransformerLM' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'torch.nn.modules.sparse.Embedding' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'torch.nn.modules.dropout.Dropout' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'torch.nn.modules.linear.Linear' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'torch.nn.modules.normalization.LayerNorm' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/serialization.py:453: SourceChangeWarning: source code of class 'torch.nn.modules.activation.ReLU' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+Loading cached dataset...
+Traceback (most recent call last):
+  File "rescore.py", line 125, in <module>
+    rescore(corpus, args.nbest_file, model, args.ext_len, args.mem_len, re)
+  File "rescore.py", line 49, in rescore
+    ret = model(data, target,*mems)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/mem_transformer.py", line 745, in forward
+    hidden, new_mems = self._forward(data, mems=mems)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/mem_transformer.py", line 660, in _forward
+    word_emb.new_ones(qlen, klen), diagonal=1+mlen).bool()[:,:,None]
+RuntimeError: CUDA error: device-side assert triggered
