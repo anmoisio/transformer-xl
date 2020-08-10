@@ -266,7 +266,7 @@ class Corpus(object):
             self.vocab.count_file(os.path.join(path, 'test.txt'))
         elif self.dataset == 'wt103':
             self.vocab.count_file(os.path.join(path, 'train.txt'))
-        elif self.dataset == 'wdtrain':
+        elif self.dataset == 'wdtrain' or self.dataset == 'wdtrain-morph':
             train_path_pattern = os.path.join(
                 path, 'train.txt')
             train_paths = glob.glob(train_path_pattern)
@@ -294,8 +294,8 @@ class Corpus(object):
                 os.path.join(path, 'valid.txt'), ordered=False, add_double_eos=True)
             self.test  = self.vocab.encode_file(
                 os.path.join(path, 'test.txt'), ordered=False, add_double_eos=True)
-        elif self.dataset == 'wdtrain':
-            self.train = self.vocab.encode_file(os.path.join(path, 'train.txt'), ordered=False,add_double_eos=True)
+        elif self.dataset == 'wdtrain' or self.dataset == 'wdtrain-morph':
+            self.train = self.vocab.encode_file(os.path.join(path, 'train.txt'), ordered=False, add_double_eos=True)
             self.valid = self.vocab.encode_file(
                 os.path.join(path, 'valid.txt'), ordered=False, add_double_eos=True)
             self.test  = self.vocab.encode_file(
@@ -305,7 +305,7 @@ class Corpus(object):
         if split == 'train':
             if self.dataset in ['ptb', 'wt2', 'wt103', 'enwik8', 'text8','wddev']:
                 data_iter = LMOrderedIterator(self.train, *args, **kwargs)
-            elif self.dataset == 'wdtrain':
+            elif self.dataset == 'wdtrain' or self.dataset == 'wdtrain-morph':
                 kwargs['shuffle'] = True
                 #data_iter = LMMultiFileIterator(self.train, self.vocab, *args, **kwargs)
                 data_iter=LMShuffledIterator(self.train, *args, **kwargs)
@@ -314,7 +314,7 @@ class Corpus(object):
             data = self.valid if split == 'valid' else self.test
             if self.dataset in ['ptb', 'wt2', 'wt103', 'enwik8', 'text8','wddev']:
                 data_iter = LMOrderedIterator(data, *args, **kwargs)
-            elif self.dataset == 'wdtrain':
+            elif self.dataset == 'wdtrain' or self.dataset == 'wdtrain-morph':
                 data_iter = LMShuffledIterator(data, *args, **kwargs)
                 #data_iter = RescoreIter(data, *args, **kwargs)
                 #data_iter = LMOrderedIterator(data, *args, **kwargs)
@@ -356,6 +356,10 @@ def get_lm_corpus(datadir, dataset):
             kwargs['special'] = []
             kwargs['lower_case'] = False
             kwargs['vocab_file'] = os.path.join(datadir, '100k.vocab')
+        elif dataset == 'wdtrain-morph':
+            kwargs['special'] = []
+            kwargs['lower_case'] = False
+            kwargs['vocab_file'] = os.path.join(datadir, 'subword.vocab')
         elif dataset in ['enwik8', 'text8']:
             pass
 
@@ -370,7 +374,7 @@ if __name__ == '__main__':
     parser.add_argument('--datadir', type=str, default='../data/text8',
                         help='location of the data corpus')
     parser.add_argument('--dataset', type=str, default='text8',
-                        choices=['ptb', 'wt2', 'wt103', 'lm1b', 'enwik8', 'text8', 'wddev', 'wdtrain'],
+                        choices=['ptb', 'wt2', 'wt103', 'lm1b', 'enwik8', 'text8', 'wddev', 'wdtrain', 'wdtrain-morph'],
                         help='dataset name')
     args = parser.parse_args()
 

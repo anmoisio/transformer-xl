@@ -1,0 +1,9 @@
+
+Currently Loaded Modules:
+  1) anaconda3/2019.11-gpu
+
+ 
+
+Run training...
+slurmstepd: error: *** JOB 55034611 ON gpu37 CANCELLED AT 2020-08-09T20:32:03 ***
+Job has already finished for job 55034611

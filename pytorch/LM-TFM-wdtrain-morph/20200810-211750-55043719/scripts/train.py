@@ -154,14 +154,8 @@ assert args.batch_size % args.batch_chunk == 0
 
 args.work_dir = '{}-{}'.format(args.work_dir, args.dataset)
 args.work_dir = os.path.join(args.work_dir, time.strftime('%Y%m%d-%H%M%S') + '-' + str(args.job_id))
-if args.dataset == 'wdtrain':
-    train_script = 'run_webdsp.sh'
-elif args.dataset == 'wdtrain-morph':
-    train_script = 'run_webdsp-morph.sh'
-else:
-    train_script = None
 logging = create_exp_dir(args.work_dir,
-    scripts_to_save=['train.py', 'mem_transformer.py', train_script], debug=args.debug)
+    scripts_to_save=['train.py', 'mem_transformer.py', 'run_webdsp.sh'], debug=args.debug)
 
 # Set the random seed manually for reproducibility.
 np.random.seed(args.seed)

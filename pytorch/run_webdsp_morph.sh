@@ -11,18 +11,18 @@ if [[ $1 == 'train' ]]; then
     echo 'Run training...'
     python train.py \
         --cuda \
-        --data ../data/web-dsp/ \
-        --dataset wdtrain \
+        --data ../data/web-dsp-morph-42k/ \
+        --dataset wdtrain-morph \
         --n_layer 32 \
         --d_model 256 \
         --n_head 8 \
         --d_head 40 \
         --d_inner 1024 \
-        --dropout 0.2 \
-        --dropatt 0.2 \
+        --dropout 0.05 \
+        --dropatt 0.05 \
         --optim adam \
-        --lr 0.0001 \
-        --warmup_step 20000 \
+        --lr 0.00025 \
+        --warmup_step 40000 \
         --max_step 1200000 \
         --batch_chunk 4 \
         --tgt_len 32 \

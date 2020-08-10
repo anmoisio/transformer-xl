@@ -20,7 +20,7 @@ parser = argparse.ArgumentParser(description='PyTorch Transformer Language Model
 parser.add_argument('--data', type=str, default='../data/wikitext-103',
                     help='location of the data corpus')
 parser.add_argument('--dataset', type=str, default='wt103',
-                    choices=['wt103', 'lm1b', 'enwik8', 'text8', 'wdtrain', 'wddev', 'wdtrain-morph'],
+                    choices=['wt103', 'lm1b', 'enwik8', 'text8', 'wdtrain', 'wddev'],
                     help='dataset name')
 parser.add_argument('--n_layer', type=int, default=12,
                     help='number of total layers')
@@ -141,8 +141,6 @@ parser.add_argument('--static-loss-scale', type=float, default=1,
 parser.add_argument('--dynamic-loss-scale', action='store_true',
                     help='Use dynamic loss scaling.  If supplied, this argument'
                     ' supersedes --static-loss-scale.')
-parser.add_argument('--job_id', type=int,
-                    help='slurm job id')
 args = parser.parse_args()
 args.tied = not args.not_tied
 
@@ -153,15 +151,9 @@ assert args.ext_len >= 0, 'extended context length must be non-negative'
 assert args.batch_size % args.batch_chunk == 0
 
 args.work_dir = '{}-{}'.format(args.work_dir, args.dataset)
-args.work_dir = os.path.join(args.work_dir, time.strftime('%Y%m%d-%H%M%S') + '-' + str(args.job_id))
-if args.dataset == 'wdtrain':
-    train_script = 'run_webdsp.sh'
-elif args.dataset == 'wdtrain-morph':
-    train_script = 'run_webdsp-morph.sh'
-else:
-    train_script = None
+args.work_dir = os.path.join(args.work_dir, time.strftime('%Y%m%d-%H%M%S'))
 logging = create_exp_dir(args.work_dir,
-    scripts_to_save=['train.py', 'mem_transformer.py', train_script], debug=args.debug)
+    scripts_to_save=['train.py', 'mem_transformer.py', 'run_webdsp.sh'], debug=args.debug)
 
 # Set the random seed manually for reproducibility.
 np.random.seed(args.seed)
@@ -204,11 +196,11 @@ te_iter = corpus.get_iterator('test', eval_batch_size, args.eval_tgt_len,
 # adaptive softmax / embedding
 cutoffs, tie_projs = [], [False]
 if args.adaptive:
-    assert args.dataset in ['wt103', 'wdtrain', 'wddev', 'wdtrain-morph']
+    assert args.dataset in ['wt103', 'wdtrain', 'wddev']
     if args.dataset == 'wt103':
         cutoffs = [20000, 40000, 200000]
         tie_projs += [True] * len(cutoffs)
-    elif args.dataset == 'wdtrain' or args.dataset == 'wdtrain-morph':
+    elif args.dataset == 'wdtrain':
         cutoffs = []
         tie_projs += [False] * len(cutoffs)
     if args.dataset == 'wddev':

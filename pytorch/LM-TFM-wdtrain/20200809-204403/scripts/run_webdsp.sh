@@ -4,8 +4,8 @@
 #SBATCH --gres=gpu:1
 
 . ./path.sh
-export PYTHONIOENCODING='utf-8'
 module list
+export PYTHONIOENCODING='utf-8'
 
 if [[ $1 == 'train' ]]; then
     echo 'Run training...'
@@ -21,16 +21,17 @@ if [[ $1 == 'train' ]]; then
         --dropout 0.2 \
         --dropatt 0.2 \
         --optim adam \
-        --lr 0.0001 \
-        --warmup_step 20000 \
+        --lr 0.00025 \
+        --warmup_step 40000 \
         --max_step 1200000 \
         --batch_chunk 4 \
         --tgt_len 32 \
         --mem_len 32 \
         --eval_tgt_len 32 \
-        --batch_size 512 \
+        --batch_size 256 \
         --gpu0_bsz -1 \
-        --job_id "${SLURM_JOB_ID}" \
+        --restart \
+        --restart_dir /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/LM-TFM-wdtrain/20200808-233619/ \
         ${@:2}
 elif [[ $1 == 'eval' ]]; then
     echo 'Run evaluation...'
