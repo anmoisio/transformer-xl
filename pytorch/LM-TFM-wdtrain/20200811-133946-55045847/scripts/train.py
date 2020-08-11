@@ -157,7 +157,7 @@ args.work_dir = os.path.join(args.work_dir, time.strftime('%Y%m%d-%H%M%S') + '-'
 if args.dataset == 'wdtrain':
     train_script = 'run_webdsp.sh'
 elif args.dataset == 'wdtrain-morph':
-    train_script = 'run_webdsp_morph.sh'
+    train_script = 'run_webdsp-morph.sh'
 else:
     train_script = None
 logging = create_exp_dir(args.work_dir,

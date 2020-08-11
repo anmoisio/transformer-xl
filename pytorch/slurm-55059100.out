@@ -1,0 +1,16 @@
+
+Currently Loaded Modules:
+  1) anaconda3/2019.11-gpu
+
+ 
+
+Run training...
+Experiment dir : LM-TFM-wdtrain-morph/20200811-225006-55059100
+Traceback (most recent call last):
+  File "train.py", line 164, in <module>
+    scripts_to_save=['train.py', 'mem_transformer.py', train_script], debug=args.debug)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/utils/exp_utils.py", line 34, in create_exp_dir
+    shutil.copyfile(script, dst_file)
+  File "/share/apps/anaconda/2019.11-gpu/lib/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'run_webdsp-morph.sh'

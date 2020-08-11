@@ -21,7 +21,8 @@ def rescore(corpus, nbest_file, model, ext_len, mem_len, re):
         data = torch.LongTensor(bptt, 1)
         target = torch.LongTensor(bptt, 1)
         model.reset_length(bptt, ext_len, mem_len)
-        n_retain = 0        
+        n_retain = 0
+           
         # data   : [n_retain+bptt x bsz]
         # target : [bptt x bsz]
         data[n_retain:].fill_(-1)

@@ -5,3 +5,5 @@ Currently Loaded Modules:
  
 
 Run training...
+slurmstepd: error: *** JOB 55036342 ON gpu36 CANCELLED AT 2020-08-11T11:50:00 DUE TO TIME LIMIT ***
+Job has already finished for job 55036342

@@ -17,7 +17,7 @@ fi
 mkdir -p generated/results
 
 base=$(basename $lm_score_file); echo $base
-for weight in $(seq 4 15); do
+for weight in $(seq 8 12); do
     result_file=generated/hypoth_"$base"_lms"$weight".txt
     python3 ../../kaldi-utensils/cutlery/rescore_nbest.py --lm-weight "$weight" \
     $nbest_list $am_score_file \

@@ -46,3 +46,23 @@ LM scale 15
 %WER 39.55 [ 7101 / 17953, 285 ins, 2500 del, 4316 sub ]
 %SER 98.69 [ 976 / 989 ]
 Scored 989 sentences, 0 not present in hyp.
+LM scale 8
+%WER 41.50 [ 4241 / 10219, 177 ins, 1318 del, 2746 sub ] [PARTIAL]
+%SER 99.10 [ 553 / 558 ]
+Scored 558 sentences, 431 not present in hyp.
+LM scale 9
+%WER 41.55 [ 4246 / 10219, 167 ins, 1360 del, 2719 sub ] [PARTIAL]
+%SER 99.10 [ 553 / 558 ]
+Scored 558 sentences, 431 not present in hyp.
+LM scale 10
+%WER 41.90 [ 4282 / 10219, 159 ins, 1416 del, 2707 sub ] [PARTIAL]
+%SER 99.10 [ 553 / 558 ]
+Scored 558 sentences, 431 not present in hyp.
+LM scale 11
+%WER 42.15 [ 4307 / 10219, 154 ins, 1467 del, 2686 sub ] [PARTIAL]
+%SER 99.10 [ 553 / 558 ]
+Scored 558 sentences, 431 not present in hyp.
+LM scale 12
+%WER 42.46 [ 4339 / 10219, 151 ins, 1527 del, 2661 sub ] [PARTIAL]
+%SER 99.28 [ 554 / 558 ]
+Scored 558 sentences, 431 not present in hyp.
