@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #SBATCH --mem=18G
-#SBATCH --time=1-00
+#SBATCH --time=5-00
 #SBATCH --gres=gpu:1
 #SBATCH --output=/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/slurm-output/%x-%j.out
 
@@ -15,8 +15,8 @@ data_dir="../data/web-dsp-morph-42k/"
 temp_file=$(mktemp tmp/rescore.XXXXXX)
 test_set=devel
 nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
-n=200
-n-best_file="${nbest_dir}/${test_set}/chain-${n}best-morph/text"
+n=1000
+n_best_file="${nbest_dir}/${test_set}/chain-${n}best-morph/text"
 out_dir="../data/rescored/${test_set}-${n}-best-morph/"
 
 python3 rescore.py --cuda \
@@ -24,8 +24,8 @@ python3 rescore.py --cuda \
   --dataset "${dataset}" \
   --tmp "${temp_file}" \
   --out-dir "${out_dir}" \
-  --nbest-file "${n-best_file}" \
+  --nbest-file "${n_best_file}" \
   --model "${model}" \
-  --work-dir "${model_dir}/${model_folder}" \
+  --work-dir "${model_path}/${model_folder}" \
 
 rm $temp_file
