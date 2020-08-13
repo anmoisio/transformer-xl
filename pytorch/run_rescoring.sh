@@ -18,6 +18,7 @@ nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
 n=50
 n_best_file="${nbest_dir}/${test_set}/chain-${n}best/text"
 out_dir="../data/rescored/${test_set}-${n}-best/"
+mkdir -p "${out_dir}"
 
 python3 rescore.py --cuda \
   --data "${data_dir}" \
