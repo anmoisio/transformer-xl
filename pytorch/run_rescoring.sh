@@ -1,22 +1,31 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 #SBATCH --mem=18G
-#SBATCH --time=2-00
+#SBATCH --time=1:00:00
 #SBATCH --gres=gpu:1
-#SBATCH --output=/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/slurm-output/slurm-%j.out
+#SBATCH --output=/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/slurm-output/%x-%j.out
 
 . ./path.sh
 module list
-export PYTHONIOENCODING='utf-8'
-models="20200807-113927"
-temp_file=$(mktemp tmp/rescore.XXXXXX)
 
-python3 rescore.py \
-  --data ../data/web-dsp/ \
-  --tmp $temp_file \
-  --out-dir ../data/results/1000best/ \
-  --nbest-file /scratch/work/moisioa3/conv_lm/nbest/devel/chain-1000best/text \
-  --models "$models" \
-  --cuda \
-  --work-dir /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/LM-TFM-wdtrain/ \
+model_path="/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch"
+dataset="wdtrain"
+model_folder="LM-TFM-${dataset}"
+model="20200811-133946-55045847"
+data_dir="../data/web-dsp/"
+temp_file=$(mktemp tmp/rescore.XXXXXX)
+test_set=devel
+nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
+n=50
+n_best_file="${nbest_dir}/${test_set}/chain-${n}best/text"
+out_dir="../data/rescored/${test_set}-${n}-best/"
+
+python3 rescore.py --cuda \
+  --data "${data_dir}" \
+  --dataset "${dataset}" \
+  --tmp "${temp_file}" \
+  --out-dir "${out_dir}" \
+  --nbest-file "${n_best_file}" \
+  --model "${model}" \
+  --work-dir "${model_path}/${model_folder}" \
 
 rm $temp_file

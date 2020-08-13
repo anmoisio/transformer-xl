@@ -1,0 +1,13 @@
+proj dir /scratch/work/moisioa3/conv_lm/scripts/..
+refs /scratch/work/moisioa3/conv_lm/scripts/../data/devel/normalized.trn
+params /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/hypoth_text-20200811-225532-55059106_lms8-combined.trn /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/hypoth_text-20200811-225532-55059106_lms9-combined.trn /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/hypoth_text-20200811-225532-55059106_lms10-combined.trn /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/hypoth_text-20200811-225532-55059106_lms11-combined.trn /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/hypoth_text-20200811-225532-55059106_lms12-combined.trn
+hypoth_text-20200811-225532-55059106_lms8-combined
+      | Sum/Avg|  989   17219 | 77.1   15.6    7.3    3.2   26.2   83.5 |
+hypoth_text-20200811-225532-55059106_lms9-combined
+      | Sum/Avg|  989   17216 | 77.0   15.3    7.7    3.2   26.2   83.3 |
+hypoth_text-20200811-225532-55059106_lms10-combined
+      | Sum/Avg|  989   17215 | 76.7   15.2    8.0    3.0   26.3   83.7 |
+hypoth_text-20200811-225532-55059106_lms11-combined
+      | Sum/Avg|  989   17210 | 76.5   15.0    8.4    2.9   26.4   83.9 |
+hypoth_text-20200811-225532-55059106_lms12-combined
+      | Sum/Avg|  989   17205 | 76.2   15.0    8.7    2.8   26.6   84.4 |

@@ -1,0 +1,20 @@
+
+Currently Loaded Modules:
+  1) anaconda3/2019.11-gpu
+
+ 
+
+Producing dataset wdtrain-morph...
+building vocab from ../data/web-dsp-morph/subword.vocab
+Traceback (most recent call last):
+  File "rescore.py", line 116, in <module>
+    corpus = get_lm_corpus(args.data, args.dataset)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/data_utils.py", line 366, in get_lm_corpus
+    corpus = Corpus(datadir, dataset, **kwargs)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/data_utils.py", line 275, in __init__
+    self.vocab.build_vocab()
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/utils/vocabulary.py", line 77, in build_vocab
+    self._build_from_file(self.vocab_file)
+  File "/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/utils/vocabulary.py", line 68, in _build_from_file
+    with open(vocab_file, 'r', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/web-dsp-morph/subword.vocab'

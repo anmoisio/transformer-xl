@@ -1,0 +1,7 @@
+
+Currently Loaded Modules:
+  1) anaconda3/2019.11-gpu
+
+ 
+
+/var/spool/slurmd/job55073879/slurm_script: line 19: n-best_file=/scratch/work/moisioa3/conv_lm/nbest/devel/chain-50best/text: No such file or directory

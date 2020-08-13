@@ -5,3 +5,5 @@ Currently Loaded Modules:
  
 
 Run training...
+slurmstepd: error: *** JOB 55045847 ON gpu31 CANCELLED AT 2020-08-12T10:36:10 ***
+Job has already finished for job 55045847
