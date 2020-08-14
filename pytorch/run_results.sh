@@ -8,9 +8,9 @@ nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
 gen_dir="/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated"
 rescore_dir="/scratch/work/moisioa3/conv_lm/transformer-xl/data/rescored"
 
-model="20200811-133946-55045847"
+# model="20200811-133946-55045847"
 model="20200811-225532-55059106"
-n=200
+n=1000
 morph="-morph"
 # morph=""
 
