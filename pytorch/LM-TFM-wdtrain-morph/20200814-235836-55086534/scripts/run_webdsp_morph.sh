@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #SBATCH --mem=18G
-#SBATCH --time=3-00
+#SBATCH --time=2-00
 #SBATCH --gres=gpu:1
 #SBATCH --output=/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/slurm-output/%x-%j.out
 
@@ -19,21 +19,18 @@ if [[ $1 == 'train' ]]; then
         --n_head 8 \
         --d_head 40 \
         --d_inner 1024 \
-        --dropout 0.05 \
-        --dropatt 0.05 \
+        --dropout 0.1 \
+        --dropatt 0.1 \
         --optim adam \
-        --lr 0.00025 \
-        --warmup_step 0 \
-        --max_step 1200000 \
-        --batch_chunk 4 \
+        --lr 0.0001 \
+        --warmup_step 20000 \
+        --max_step 120000 \
+        --batch_chunk 1 \
         --tgt_len 32 \
         --mem_len 32 \
         --eval_tgt_len 32 \
-        --batch_size 512 \
+        --batch_size 64 \
         --gpu0_bsz -1 \
-        --job_id "${SLURM_JOB_ID}" \
-        --restart \
-        --restart_dir /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/LM-TFM-wdtrain-morph/20200823-103815-55144064 \
         --job_id "${SLURM_JOB_ID}" \
         ${@:2}
 elif [[ $1 == 'eval' ]]; then

@@ -1,0 +1,9 @@
+
+Currently Loaded Modules:
+  1) anaconda3/2019.11-gpu
+
+ 
+
+Run training...
+slurmstepd: error: *** JOB 55131015 ON gpu33 CANCELLED AT 2020-08-22T15:59:55 DUE TO TIME LIMIT ***
+Job has already finished for job 55131015

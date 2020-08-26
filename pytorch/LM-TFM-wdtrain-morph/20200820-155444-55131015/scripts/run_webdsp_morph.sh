@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #SBATCH --mem=18G
-#SBATCH --time=3-00
+#SBATCH --time=2-00
 #SBATCH --gres=gpu:1
 #SBATCH --output=/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/slurm-output/%x-%j.out
 
@@ -33,7 +33,7 @@ if [[ $1 == 'train' ]]; then
         --gpu0_bsz -1 \
         --job_id "${SLURM_JOB_ID}" \
         --restart \
-        --restart_dir /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/LM-TFM-wdtrain-morph/20200823-103815-55144064 \
+        --restart_dir /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/LM-TFM-wdtrain-morph/20200811-225532-55059106 \
         --job_id "${SLURM_JOB_ID}" \
         ${@:2}
 elif [[ $1 == 'eval' ]]; then
