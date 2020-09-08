@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #SBATCH --mem=18G
-#SBATCH --time=5-00
+#SBATCH --time=1:00:00
 #SBATCH --gres=gpu:1
 #SBATCH --output=/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/slurm-output/%x-%j.out
 
@@ -10,12 +10,12 @@ module list
 model_path="/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch"
 dataset="wdtrain-morph"
 model_folder="LM-TFM-${dataset}"
-model="20200811-225532-55059106"
+model="20200826-132343-55162922"
 data_dir="../data/web-dsp-morph-42k/"
 temp_file=$(mktemp tmp/rescore.XXXXXX)
 test_set=devel
 nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
-n=1000
+n=50
 n_best_file="${nbest_dir}/${test_set}/chain-${n}best-morph/text"
 out_dir="../data/rescored/${test_set}-${n}-best-morph/"
 mkdir -p "${out_dir}"

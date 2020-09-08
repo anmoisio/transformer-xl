@@ -9,8 +9,10 @@ gen_dir="/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated"
 rescore_dir="/scratch/work/moisioa3/conv_lm/transformer-xl/data/rescored"
 
 # model="20200811-133946-55045847"
-model="20200811-225532-55059106"
-n=1000
+# model="20200811-225532-55059106"
+# model="20200823-103815-55144064"
+model="20200826-132343-55162922"
+n=50
 morph="-morph"
 # morph=""
 
