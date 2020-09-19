@@ -9,7 +9,7 @@ def parse_uttid_and_n(nbest_id):
   return nbest_id.rsplit("-", maxsplit=1)
 
 def read_cost_file(path):
-  costs = {} #{<uttid>:{<n>:cost}}
+  costs = {} # {<uttid>:{<n>:cost}}
   with open(path) as fi:
     for line in fi:
       nbest_id, cost = line.strip().split()

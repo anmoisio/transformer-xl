@@ -16,8 +16,8 @@ temp_file=$(mktemp tmp/rescore.XXXXXX)
 test_set=devel
 nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
 n=50
-n_best_file="${nbest_dir}/${test_set}/chain-${n}best-morph/text"
-out_dir="../data/rescored/${test_set}-${n}-best-morph/"
+n_best_file="${nbest_dir}/${test_set}/morph-5-gram-lstm-${n}best/text"
+out_dir="../data/rescored-lstm/${test_set}-${n}-best-morph/"
 mkdir -p "${out_dir}"
 
 python3 rescore.py --cuda \

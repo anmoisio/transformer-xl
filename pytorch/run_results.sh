@@ -6,7 +6,7 @@ export PYTHONIOENCODING='utf-8'
 
 nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
 gen_dir="/scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated"
-rescore_dir="/scratch/work/moisioa3/conv_lm/transformer-xl/data/rescored"
+rescore_dir="/scratch/work/moisioa3/conv_lm/transformer-xl/data/rescored-lstm"
 
 # model="20200811-133946-55045847"
 # model="20200811-225532-55059106"
@@ -19,9 +19,13 @@ morph="-morph"
 results () {
   local test_set="${1}"
 
+  # "${nbest_dir}/${test_set}/chain-${n}best${morph}/text" \
+  # "${nbest_dir}/${test_set}/chain-${n}best${morph}/ac_cost" \
+  # "${rescore_dir}/${test_set}-${n}-best${morph}/text-${model}"
+
   bash results.sh \
-  "${nbest_dir}/${test_set}/chain-${n}best${morph}/text" \
-  "${nbest_dir}/${test_set}/chain-${n}best${morph}/ac_cost" \
+  "${nbest_dir}/${test_set}/morph-5-gram-lstm-50best/text" \
+  "${nbest_dir}/${test_set}/morph-5-gram-lstm-50best/ac_cost" \
   "${rescore_dir}/${test_set}-${n}-best${morph}/text-${model}"
 
   for filename in ${gen_dir}/hypoth_text-${model}_lms{?,??}.txt

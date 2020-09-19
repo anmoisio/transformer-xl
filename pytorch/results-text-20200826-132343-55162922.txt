@@ -18,3 +18,23 @@ LM scale 12
 %WER 38.12 [ 6844 / 17953, 353 ins, 2279 del, 4212 sub ]
 %SER 94.44 [ 934 / 989 ]
 Scored 989 sentences, 0 not present in hyp.
+LM scale 8
+%WER 37.45 [ 6723 / 17953, 381 ins, 2007 del, 4335 sub ]
+%SER 93.83 [ 928 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 9
+%WER 37.39 [ 6713 / 17953, 371 ins, 2051 del, 4291 sub ]
+%SER 93.63 [ 926 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 10
+%WER 37.54 [ 6739 / 17953, 356 ins, 2119 del, 4264 sub ]
+%SER 94.14 [ 931 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 11
+%WER 37.41 [ 6717 / 17953, 335 ins, 2177 del, 4205 sub ]
+%SER 94.34 [ 933 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 12
+%WER 37.50 [ 6733 / 17953, 331 ins, 2225 del, 4177 sub ]
+%SER 94.34 [ 933 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
