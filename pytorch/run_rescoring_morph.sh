@@ -13,11 +13,11 @@ model_folder="LM-TFM-${dataset}"
 model="20200826-132343-55162922"
 data_dir="../data/web-dsp-morph-42k/"
 temp_file=$(mktemp tmp/rescore.XXXXXX)
-test_set=devel
+test_set=eval
 nbest_dir="/scratch/work/moisioa3/conv_lm/nbest"
 n=50
-n_best_file="${nbest_dir}/${test_set}/morph-5-gram-lstm-${n}best/text"
-out_dir="../data/rescored-lstm/${test_set}-${n}-best-morph/"
+n_best_file="${nbest_dir}/${test_set}/morph-5-gram-lstm-rescored-lats-to-50best/text"
+out_dir="../data/rescored-lstm/${test_set}-${n}-best-morph-lstm-rescored-lats/"
 mkdir -p "${out_dir}"
 
 python3 rescore.py --cuda \

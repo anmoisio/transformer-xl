@@ -1,0 +1,4 @@
+proj dir /scratch/work/moisioa3/conv_lm/scripts/..
+refs /scratch/work/moisioa3/conv_lm/scripts/../data/eval/normalized.trn
+params /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/eval/hypoth_text-20200826-132343-55162922_lms8-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/eval/hypoth_text-20200826-132343-55162922_lms9-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/eval/hypoth_text-20200826-132343-55162922_lms10-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/eval/hypoth_text-20200826-132343-55162922_lms11-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/eval/hypoth_text-20200826-132343-55162922_lms12-50best-combined.txt
+hypoth_text-20200826-132343-55162922_lms8-50best-combined.txt

@@ -1,0 +1,13 @@
+proj dir /scratch/work/moisioa3/conv_lm/scripts/..
+refs /scratch/work/moisioa3/conv_lm/scripts/../data/devel/normalized.trn
+params /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/hypoth_text-20200826-132343-55162922_lms8-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/hypoth_text-20200826-132343-55162922_lms9-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/hypoth_text-20200826-132343-55162922_lms10-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/hypoth_text-20200826-132343-55162922_lms11-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/lstm-lats/hypoth_text-20200826-132343-55162922_lms12-50best-combined.txt
+hypoth_text-20200826-132343-55162922_lms8-50best-combined.txt
+      | Sum/Avg|  989   17191 | 80.1   13.2    6.7    2.7   22.6   82.0 |
+hypoth_text-20200826-132343-55162922_lms9-50best-combined.txt
+      | Sum/Avg|  989   17188 | 80.1   13.1    6.9    2.6   22.6   81.8 |
+hypoth_text-20200826-132343-55162922_lms10-50best-combined.txt
+      | Sum/Avg|  989   17187 | 79.9   13.0    7.1    2.5   22.6   81.9 |
+hypoth_text-20200826-132343-55162922_lms11-50best-combined.txt
+      | Sum/Avg|  989   17188 | 79.7   12.8    7.4    2.4   22.7   81.8 |
+hypoth_text-20200826-132343-55162922_lms12-50best-combined.txt
+      | Sum/Avg|  989   17190 | 79.5   12.7    7.8    2.4   22.9   82.7 |
