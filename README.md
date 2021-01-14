@@ -1,4 +1,4 @@
-#### Modifications after forking mostly from [Abhilash Jain's experiments](https://github.com/aalto-speech/FinnishXL)
+#### Some of the modifications after forking are from [Abhilash Jain's experiments](https://github.com/aalto-speech/FinnishXL)
 
 # Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context
 

@@ -1,0 +1,13 @@
+proj dir /scratch/work/moisioa3/conv_lm/scripts/..
+refs /scratch/work/moisioa3/conv_lm/scripts/../data/devel/normalized.trn
+params /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/tdnn7q_sp_ensemble2_morph_nosp_4-gram_expt2-sampled-seq40/devel/hypoth_lm_cost_lms8-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/tdnn7q_sp_ensemble2_morph_nosp_4-gram_expt2-sampled-seq40/devel/hypoth_lm_cost_lms9-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/tdnn7q_sp_ensemble2_morph_nosp_4-gram_expt2-sampled-seq40/devel/hypoth_lm_cost_lms10-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/tdnn7q_sp_ensemble2_morph_nosp_4-gram_expt2-sampled-seq40/devel/hypoth_lm_cost_lms11-50best-combined.txt /scratch/work/moisioa3/conv_lm/transformer-xl/pytorch/generated/tdnn7q_sp_ensemble2_morph_nosp_4-gram_expt2-sampled-seq40/devel/hypoth_lm_cost_lms12-50best-combined.txt
+hypoth_lm_cost_lms8-50best-combined.txt
+      | Sum/Avg|  989   17200 | 80.7   11.9    7.5    2.3   21.6   81.5 |
+hypoth_lm_cost_lms9-50best-combined.txt
+      | Sum/Avg|  989   17199 | 80.8   11.6    7.6    2.2   21.4   81.4 |
+hypoth_lm_cost_lms10-50best-combined.txt
+      | Sum/Avg|  989   17197 | 80.8   11.3    7.8    2.2   21.3   81.2 |
+hypoth_lm_cost_lms11-50best-combined.txt
+      | Sum/Avg|  989   17198 | 80.9   11.1    8.0    2.1   21.1   80.8 |
+hypoth_lm_cost_lms12-50best-combined.txt
+      | Sum/Avg|  989   17200 | 80.8   10.9    8.3    2.0   21.2   81.2 |

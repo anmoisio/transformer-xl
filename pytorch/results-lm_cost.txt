@@ -78,3 +78,183 @@ LM scale 12
 %WER 36.23 [ 6501 / 17943, 308 ins, 2153 del, 4040 sub ] [PARTIAL]
 %SER 94.74 [ 936 / 988 ]
 Scored 988 sentences, 1 not present in hyp.
+LM scale 8
+%WER 38.11 [ 6841 / 17953, 343 ins, 2031 del, 4467 sub ]
+%SER 94.64 [ 936 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 9
+%WER 37.80 [ 6787 / 17953, 334 ins, 2056 del, 4397 sub ]
+%SER 94.44 [ 934 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 10
+%WER 37.60 [ 6750 / 17953, 317 ins, 2104 del, 4329 sub ]
+%SER 94.03 [ 930 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 11
+%WER 37.80 [ 6787 / 17953, 299 ins, 2229 del, 4259 sub ]
+%SER 93.83 [ 928 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 12
+%WER 38.09 [ 6839 / 17953, 266 ins, 2466 del, 4107 sub ]
+%SER 93.83 [ 928 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 8
+%WER 38.11 [ 6841 / 17953, 343 ins, 2031 del, 4467 sub ]
+%SER 94.64 [ 936 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 9
+%WER 37.80 [ 6787 / 17953, 334 ins, 2056 del, 4397 sub ]
+%SER 94.44 [ 934 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 10
+%WER 37.60 [ 6750 / 17953, 317 ins, 2104 del, 4329 sub ]
+%SER 94.03 [ 930 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 11
+%WER 37.80 [ 6787 / 17953, 299 ins, 2229 del, 4259 sub ]
+%SER 93.83 [ 928 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 12
+%WER 38.09 [ 6839 / 17953, 266 ins, 2466 del, 4107 sub ]
+%SER 93.83 [ 928 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 8
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 9
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 10
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 11
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 12
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 8
+%WER 33.99 [ 6102 / 17953, 301 ins, 1938 del, 3863 sub ]
+%SER 92.82 [ 918 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 9
+%WER 33.84 [ 6075 / 17953, 289 ins, 1975 del, 3811 sub ]
+%SER 92.72 [ 917 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 10
+%WER 33.79 [ 6067 / 17953, 280 ins, 2015 del, 3772 sub ]
+%SER 92.42 [ 914 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 11
+%WER 33.60 [ 6032 / 17953, 270 ins, 2046 del, 3716 sub ]
+%SER 92.42 [ 914 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 12
+%WER 33.70 [ 6051 / 17953, 263 ins, 2099 del, 3689 sub ]
+%SER 92.52 [ 915 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 8
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 9
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 10
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 11
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 12
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 8
+%WER 38.11 [ 6841 / 17953, 343 ins, 2031 del, 4467 sub ]
+%SER 94.64 [ 936 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 9
+%WER 37.80 [ 6787 / 17953, 334 ins, 2056 del, 4397 sub ]
+%SER 94.44 [ 934 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 10
+%WER 37.60 [ 6750 / 17953, 317 ins, 2104 del, 4329 sub ]
+%SER 94.03 [ 930 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 11
+%WER 37.80 [ 6787 / 17953, 299 ins, 2229 del, 4259 sub ]
+%SER 93.83 [ 928 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 12
+%WER 38.09 [ 6839 / 17953, 266 ins, 2466 del, 4107 sub ]
+%SER 93.83 [ 928 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 8
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 9
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 10
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 11
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 12
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 8
+%WER 33.99 [ 6102 / 17953, 301 ins, 1938 del, 3863 sub ]
+%SER 92.82 [ 918 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 9
+%WER 33.84 [ 6075 / 17953, 289 ins, 1975 del, 3811 sub ]
+%SER 92.72 [ 917 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 10
+%WER 33.79 [ 6067 / 17953, 280 ins, 2015 del, 3772 sub ]
+%SER 92.42 [ 914 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 11
+%WER 33.60 [ 6032 / 17953, 270 ins, 2046 del, 3716 sub ]
+%SER 92.42 [ 914 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 12
+%WER 33.70 [ 6051 / 17953, 263 ins, 2099 del, 3689 sub ]
+%SER 92.52 [ 915 / 989 ]
+Scored 989 sentences, 0 not present in hyp.
+LM scale 8
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 9
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 10
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 11
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
+LM scale 12
+%WER -nan [ 0 / 0, 0 ins, 0 del, 0 sub ] [PARTIAL]
+%SER -nan [ 0 / 0 ]
+Scored 0 sentences, 989 not present in hyp.
